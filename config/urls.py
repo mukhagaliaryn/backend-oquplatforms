@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.urls import path, re_path, include
+from django.urls import include, path, re_path
 from django.conf import settings
 from django.views.static import serve
 
@@ -9,6 +9,9 @@ urlpatterns = [
     path('summernote/', include('django_summernote.urls')),
     re_path(r'^auth/', include('djoser.urls')),
     re_path(r'^auth/', include('djoser.urls.jwt')),
+
+    # API apps...
+    path('', include('apps.platform_.urls'))
 ]
 
 

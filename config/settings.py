@@ -28,6 +28,9 @@ INSTALLED_APPS = [
     'corsheaders',
     'storages',
     'django_summernote',
+
+    # apps...
+    'apps.platform_.apps.PlatformConfig',
 ]
 
 
@@ -58,8 +61,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# AUTH_USER_MODEL = 'myaccount.User'
-ROOT_URLCONF = 'core.urls'
+# AUTH_USER_MODEL = 'core.User'
+ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
     {
@@ -77,7 +80,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'core.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # Database
@@ -120,7 +123,8 @@ LANGUAGES = (
 MODELTRANSLATION_DEFAULT_LANGUAGE = 'ru'
 MODELTRANSLATION_LANGUAGES = ('ru', 'kk', 'en', )
 
-MODELTRANSLATION_TRANSLATION_FILES = ()
+MODELTRANSLATION_TRANSLATION_FILES = (
+)
 
 LOCALE_PATHS = [
     BASE_DIR / 'locales'
