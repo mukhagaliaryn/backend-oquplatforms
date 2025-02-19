@@ -120,10 +120,7 @@ LANGUAGES = (
 MODELTRANSLATION_DEFAULT_LANGUAGE = 'ru'
 MODELTRANSLATION_LANGUAGES = ('ru', 'kk', 'en', )
 
-MODELTRANSLATION_TRANSLATION_FILES = (
-    'src.platform.myaccount.translations',
-    'src.platform.resources.translations',
-)
+MODELTRANSLATION_TRANSLATION_FILES = ()
 
 LOCALE_PATHS = [
     BASE_DIR / 'locales'
