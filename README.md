@@ -4,9 +4,9 @@
     alt="OQU platforms Logo" width="120">
 </p>
 <h1 align="center">OQU platforms</h1>
-<div style="display: flex; justify-content: center;">
+<p align="center">
     <a href="https://oquplatforms.com" style="font-weight: 600">Ресми сілтеме</a>
-</div>
+</p>
 
 
 ## OQU platforms
